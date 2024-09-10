@@ -178,7 +178,7 @@ export default function Home() {
               }
             />
             {point2Bullets.map((bullet, index) => {
-              return <Bullet title={bullet.title} content={bullet.content} />;
+              return <Bullet key={index} title={bullet.title} content={bullet.content} />;
             })}
             <div className="mb-10" />
             <Title
@@ -190,7 +190,7 @@ export default function Home() {
               }
             />
             {point3Bullets.map((bullet, index) => {
-              return <Bullet title={bullet.title} content={bullet.content} />;
+              return <Bullet key={index} title={bullet.title} content={bullet.content} />;
             })}
             <div className="mb-10" />
             <Title
@@ -202,7 +202,7 @@ export default function Home() {
               }
             />
             {point4Bullets.map((bullet, index) => {
-              return <Bullet title={bullet.title} content={bullet.content} />;
+              return <Bullet key={index} title={bullet.title} content={bullet.content} />;
             })}
             <div className="mb-10" />
             <Title title={" 5. The Road Ahead"} />
@@ -234,7 +234,7 @@ export default function Home() {
               }
             />
             {point5Bullets.map((bullet, index) => {
-              return <Bullet title={bullet.title} content={bullet.content} />;
+              return <Bullet key={index} title={bullet.title} content={bullet.content} />;
             })}
             <div className="mb-10" />
             <span className="text-slate-300  mb-10">
