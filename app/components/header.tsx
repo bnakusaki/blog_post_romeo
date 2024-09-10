@@ -54,7 +54,7 @@ export default function Header() {
               <span className="block md:hidden">{social.icon}</span>
               <span className="hidden md:block">{social.name}</span>
               {index < socials.length - 1 && (
-                <span>&nbsp;&nbsp;/&nbsp;&nbsp;</span>
+                <span className="mx-2">/</span>
               )}
             </a>
           ))}
