@@ -133,7 +133,7 @@ export default function Home() {
               The Future of Electric Vehicle Charging Stations in Africa
             </span>
             <span className="text-slate-300 mb-10 mt-5">
-              Written by: Hi, I'm Romeo
+              Written by: Romeo
             </span>
 
             <div className="mt-5 md:mt-10 lg:mt-20 flex flex-col items-start">
