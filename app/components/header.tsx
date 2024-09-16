@@ -1,4 +1,3 @@
-import { Facebook, Instagram, Xrp } from "iconsax-react";
 import { CiMail } from "react-icons/ci";
 import { FaFacebook, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
