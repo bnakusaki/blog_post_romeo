@@ -124,159 +124,189 @@ export default function Home() {
   ];
 
   return (
-    <div>
+    <main className="w-screen h-screen">
       <Header />
-      <div className="flex justify-center mx-40 mb-[200px]">
-        <div className="mt-20 flex flex-col items-center">
-          <div className="bg-white rounded-full h-[100px] w-[100px] mb-5"></div>
-          <span className="text-slate-300 mb-20">Hi, I'm Romeo</span>
-          <span className="text-slate-300 mb-10 text-center text-5xl leading-[60px] font-medium tracking-wider bg-gradient-to-r from-slate-100 to-blue-400 bg-clip-text text-transparent">
-            The Future of
-            <br />
-            Electric Vehicle Charging Stations
-            <br />
-            in Africa
-          </span>
-          <div className="mt-20 flex flex-col items-start">
-            <span className="text-slate-300  mb-10">
-              As the world moves toward greener and more sustainable energy
-              solutions, Africa is also beginning to embrace the electric
-              vehicle (EV) revolution. While electric vehicles are still in
-              their infancy on the continent, there is a growing recognition
-              that the future of transportation must be sustainable, efficient,
-              and environmentally friendly. One of the critical components of
-              this transition is the establishment of an extensive network of
-              electric vehicle charging stations across Africa. This article
-              explores how this infrastructure could be developed in the coming
-              years and what it means for the continent.
+      {/* <div className="flex justify-center"> */}
+        <div className="mx-3 md:max-w-[70%]">
+          <div className="mt-20 flex flex-col">
+            <span className="text-slate-300 text-5xl font-medium tracking-wider bg-gradient-to-r from-slate-100 to-blue-400 bg-clip-text text-transparent">
+              The Future of Electric Vehicle Charging Stations in Africa
             </span>
-            <Title
-              title={"1. The Current Landscape of Electric Vehicles in Africa"}
-            />
-            <span className="text-slate-300  mb-5">
-              Currently, electric vehicles make up a small percentage of the
-              overall vehicle market in Africa. However, this is rapidly
-              changing due to increasing awareness of environmental issues,
-              government policies encouraging clean energy, and the declining
-              cost of electric vehicles. In countries like South Africa, Kenya,
-              and Nigeria, there is a growing interest in EVs, primarily driven
-              by urban populations who are becoming more conscious of their
-              carbon footprint.
+            <span className="text-slate-300 mb-10 mt-5">
+              Written by: Hi, I'm Romeo
             </span>
-            <span className="text-slate-300  mb-10">
-              Despite this growing interest, Africa faces several challenges in
-              adopting electric vehicles widely. These include the high cost of
-              EVs, limited charging infrastructure, and a lack of consumer
-              awareness. To overcome these hurdles, there is a need for a
-              comprehensive strategy to develop an EV ecosystem, including the
-              widespread deployment of charging stations.
-            </span>
-            <Title title={"2. Challenges in Building EV Charging Stations"} />
-            <SubTitle
-              title={
-                " Building a network of electric vehicle charging stations in Africa presents unique challenges:"
-              }
-            />
-            {point2Bullets.map((bullet, index) => {
-              return <Bullet key={index} title={bullet.title} content={bullet.content} />;
-            })}
-            <div className="mb-10" />
-            <Title
-              title={"3. Opportunities for Building EV Charging Infrastructure"}
-            />
-            <SubTitle
-              title={
-                "Despite these challenges, there are numerous opportunities for establishing EV charging stations in Africa:"
-              }
-            />
-            {point3Bullets.map((bullet, index) => {
-              return <Bullet key={index} title={bullet.title} content={bullet.content} />;
-            })}
-            <div className="mb-10" />
-            <Title
-              title={"4. Steps Towards a Sustainable EV Future in Africa"}
-            />
-            <SubTitle
-              title={
-                "To build a robust network of electric vehicle charging stations in Africa, several key steps must be taken:"
-              }
-            />
-            {point4Bullets.map((bullet, index) => {
-              return <Bullet key={index} title={bullet.title} content={bullet.content} />;
-            })}
-            <div className="mb-10" />
-            <Title title={" 5. The Road Ahead"} />
-            <span className="text-slate-300  mb-10">
-              The development of electric vehicle charging stations in Africa is
-              not just about infrastructure but about creating a sustainable and
-              forward-thinking mobility ecosystem. While challenges exist, the
-              potential benefits in terms of reduced emissions, lower fuel
-              costs, and improved public health are significant. With the right
-              mix of policy, investment, and innovation, Africa can build a
-              network of charging stations that supports a vibrant and growing
-              market for electric vehicles. This would position the continent as
-              a leader in sustainable transport and contribute to global efforts
-              to combat climate change.
-            </span>
-            <span className="text-slate-300  mb-10">
-              In conclusion, the journey to a greener, electric future in Africa
-              has just begun. The coming years will be crucial in determining
-              how quickly and effectively the continent can build the necessary
-              infrastructure to support electric vehicles. With concerted
-              efforts from governments, businesses, and consumers, Africa has
-              the potential to leapfrog into a new era of clean, efficient, and
-              sustainable transportation. Here are suggested solution to be
-              solved.
-            </span>
-            <SubTitle
-              title={
-                "Building an electric car charging station network in Africa requires a multifaceted approach that addresses the continent’s unique challenges and leverages its opportunities. Here are several potential solutions:"
-              }
-            />
-            {point5Bullets.map((bullet, index) => {
-              return <Bullet key={index} title={bullet.title} content={bullet.content} />;
-            })}
-            <div className="mb-10" />
-            <span className="text-slate-300  mb-10">
-              By employing these strategies, Africa can build a robust electric
-              vehicle charging network that supports the continent’s shift
-              toward sustainable transportation.
-            </span>
-          </div>
-          <div className="mb-4 rounded-lg">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/DPCWaOD9ZTc"
-              title="YouTube video player"
-              className="rounded-lg"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            ></iframe>
-          </div>
-          <div className="flex justify-between">
-            <Image
-              src={
-                "https://www.moneyweb.co.za/wp-content/uploads/2014/10/243338684_9-Large-1024x684.jpg"
-              }
-              alt={""}
-              width={800}
-              height={500}
-              className="rounded-lg"
-            />
-            <div className="mx-2" />
-            <Image
-              src={"https://biz-file.com/c/2408/748649.jpg"}
-              alt={""}
-              width={800}
-              height={500}
-              className="rounded-lg"
-            />
+
+            <div className="mt-5 md:mt-10 lg:mt-20 flex flex-col items-start">
+              <span className="text-slate-300  mb-10">
+                As the world moves toward greener and more sustainable energy
+                solutions, Africa is also beginning to embrace the electric
+                vehicle (EV) revolution. While electric vehicles are still in
+                their infancy on the continent, there is a growing recognition
+                that the future of transportation must be sustainable,
+                efficient, and environmentally friendly. One of the critical
+                components of this transition is the establishment of an
+                extensive network of electric vehicle charging stations across
+                Africa. This article explores how this infrastructure could be
+                developed in the coming years and what it means for the
+                continent.
+              </span>
+              <Title
+                title={
+                  "1. The Current Landscape of Electric Vehicles in Africa"
+                }
+              />
+              <span className="text-slate-300  mb-5">
+                Currently, electric vehicles make up a small percentage of the
+                overall vehicle market in Africa. However, this is rapidly
+                changing due to increasing awareness of environmental issues,
+                government policies encouraging clean energy, and the declining
+                cost of electric vehicles. In countries like South Africa,
+                Kenya, and Nigeria, there is a growing interest in EVs,
+                primarily driven by urban populations who are becoming more
+                conscious of their carbon footprint.
+              </span>
+              <span className="text-slate-300  mb-10">
+                Despite this growing interest, Africa faces several challenges
+                in adopting electric vehicles widely. These include the high
+                cost of EVs, limited charging infrastructure, and a lack of
+                consumer awareness. To overcome these hurdles, there is a need
+                for a comprehensive strategy to develop an EV ecosystem,
+                including the widespread deployment of charging stations.
+              </span>
+              <Title title={"2. Challenges in Building EV Charging Stations"} />
+              <SubTitle
+                title={
+                  " Building a network of electric vehicle charging stations in Africa presents unique challenges:"
+                }
+              />
+              {point2Bullets.map((bullet, index) => {
+                return (
+                  <Bullet
+                    key={index}
+                    title={bullet.title}
+                    content={bullet.content}
+                  />
+                );
+              })}
+              <div className="mb-10" />
+              <Title
+                title={
+                  "3. Opportunities for Building EV Charging Infrastructure"
+                }
+              />
+              <SubTitle
+                title={
+                  "Despite these challenges, there are numerous opportunities for establishing EV charging stations in Africa:"
+                }
+              />
+              {point3Bullets.map((bullet, index) => {
+                return (
+                  <Bullet
+                    key={index}
+                    title={bullet.title}
+                    content={bullet.content}
+                  />
+                );
+              })}
+              <div className="mb-10" />
+              <Title
+                title={"4. Steps Towards a Sustainable EV Future in Africa"}
+              />
+              <SubTitle
+                title={
+                  "To build a robust network of electric vehicle charging stations in Africa, several key steps must be taken:"
+                }
+              />
+              {point4Bullets.map((bullet, index) => {
+                return (
+                  <Bullet
+                    key={index}
+                    title={bullet.title}
+                    content={bullet.content}
+                  />
+                );
+              })}
+              <div className="mb-10" />
+              <Title title={" 5. The Road Ahead"} />
+              <span className="text-slate-300  mb-10">
+                The development of electric vehicle charging stations in Africa
+                is not just about infrastructure but about creating a
+                sustainable and forward-thinking mobility ecosystem. While
+                challenges exist, the potential benefits in terms of reduced
+                emissions, lower fuel costs, and improved public health are
+                significant. With the right mix of policy, investment, and
+                innovation, Africa can build a network of charging stations that
+                supports a vibrant and growing market for electric vehicles.
+                This would position the continent as a leader in sustainable
+                transport and contribute to global efforts to combat climate
+                change.
+              </span>
+              <span className="text-slate-300  mb-10">
+                In conclusion, the journey to a greener, electric future in
+                Africa has just begun. The coming years will be crucial in
+                determining how quickly and effectively the continent can build
+                the necessary infrastructure to support electric vehicles. With
+                concerted efforts from governments, businesses, and consumers,
+                Africa has the potential to leapfrog into a new era of clean,
+                efficient, and sustainable transportation. Here are suggested
+                solution to be solved.
+              </span>
+              <SubTitle
+                title={
+                  "Building an electric car charging station network in Africa requires a multifaceted approach that addresses the continent’s unique challenges and leverages its opportunities. Here are several potential solutions:"
+                }
+              />
+              {point5Bullets.map((bullet, index) => {
+                return (
+                  <Bullet
+                    key={index}
+                    title={bullet.title}
+                    content={bullet.content}
+                  />
+                );
+              })}
+              <div className="mb-10" />
+              <span className="text-slate-300  mb-10">
+                By employing these strategies, Africa can build a robust
+                electric vehicle charging network that supports the continent’s
+                shift toward sustainable transportation.
+              </span>
+            </div>
+            <div className="mb-4 rounded-lg">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/DPCWaOD9ZTc"
+                title="YouTube video player"
+                className="rounded-lg"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <div className="md:flex justify-between">
+              <Image
+                src={
+                  "https://www.moneyweb.co.za/wp-content/uploads/2014/10/243338684_9-Large-1024x684.jpg"
+                }
+                alt={""}
+                width={800}
+                height={500}
+                className="rounded-lg"
+              />
+              <div className="m-2" />
+              <Image
+                src={"https://biz-file.com/c/2408/748649.jpg"}
+                alt={""}
+                width={800}
+                height={500}
+                className="rounded-lg"
+              />
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      {/* </div> */}
+    </main>
   );
 }
 
@@ -297,7 +327,7 @@ function Bullet({ title, content }: { title: string; content: string }) {
 
 function Title({ title }: { title: string }) {
   return (
-    <span className="text-slate-300 mb-1 text-center text-2xl leading-[60px] font-medium tracking-wider bg-gradient-to-r from-slate-100 to-blue-400 bg-clip-text text-transparent leading-tight mb-5">
+    <span className="text-slate-300 mb-1 text-2xl leading-[60px] font-medium tracking-wider bg-gradient-to-r from-slate-100 to-blue-400 bg-clip-text text-transparent leading-tight mb-5">
       {title}
     </span>
   );
